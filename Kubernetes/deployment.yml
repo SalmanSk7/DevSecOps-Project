@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: netflix-app
+  name: netflix-app01
   labels:
     app: netflix-app
 spec:
@@ -15,7 +15,7 @@ spec:
         app: netflix-app
     spec:
       containers:
-      - name: netflix-app
+      - name: netflix-app01
         image: nasi101/netflix:latest
         ports:
         - containerPort: 80
